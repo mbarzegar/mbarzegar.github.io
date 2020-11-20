@@ -12,4 +12,4 @@ citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 
 
 [Download paper here](http://academicpages.github.io/files/paper1.pdf)
 
-Recommended citation:  **Barzegar Khalilsarai, Mahdi**, Haghighatshoar, Saeid, and Caire, Giuseppe. (2020). "Joint Approximate Covariance Diagonalization with Applications in MIMO Virtual Beam Design," <i> proceedings of the IEEE Global Communications Conference (Globecom)</i>. 
+Recommended citation:  Barzegar, Mahdi, Haghighatshoar, Saeid, and Caire, Giuseppe. (2020). "Joint Approximate Covariance Diagonalization with Applications in MIMO Virtual Beam Design," <i> proceedings of the IEEE Global Communications Conference (Globecom)</i>. 
