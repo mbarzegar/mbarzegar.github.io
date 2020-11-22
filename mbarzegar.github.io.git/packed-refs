@@ -1,0 +1,6 @@
+# pack-refs with: peeled fully-peeled sorted 
+d06c8f50f6b9247805370650c185a1eb3e74023d refs/heads/fix-teaching
+8f3bfd601a9d76611b27de72c0739893fa596565 refs/heads/master
+14bf751f96a45a9767c31e5bb79f270d2fec0b78 refs/heads/read-more
+9aec92b6a14ad7b96aabc4e1f42f2a5a324d5306 refs/tags/0.8.0
+9aec92b6a14ad7b96aabc4e1f42f2a5a324d5306 refs/tags/v0.8.1
