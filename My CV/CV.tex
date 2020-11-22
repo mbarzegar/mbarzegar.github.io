@@ -1,0 +1,309 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+\usepackage{enumitem}
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Mahdi \textsc{Barzegar Khalilsarai}
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+\section{Personal Data}
+
+\begin{tabular}{ll}
+   \textsc{Tel:}     & +49(0)3031429548\\
+%   \textsc{Mobile:}     & +49(0)17629872624\\
+   \textsc{email:}     & \href{m.barzegarkhalilsarai@tu-berlin.de}{m.barzegarkhalilsarai@tu-berlin.de}\\
+   \textsc{Website:}     & \href{https://mbarzegar.github.io/}{www.mbarzegar.github.io}\\
+%   \textsc{Address:}     & Mollwitzstrasse 4, 14059, Berlin, Germany
+\end{tabular}
+
+
+\section{Research Interests}
+\begin{itemize}
+ \item Signal Processing
+\item Convex Optimization
+\item Machine Learning
+\item Wireless Communication and Massive MIMO Systems
+\end{itemize}
+
+
+%Section: Education
+\section{Education}
+\begin{tabular}{rl}	
+\textsc{Present} &PhD candidate in \textsc{ Communication Systems}\\
+\textsc{Summer 2016} & \textbf{Department of Telecommunication Systems, }\\
+~ & \textbf{Technische Universit\"{a}t Berlin},  Berlin, Germany\\
+&  Advisors: Prof. Giuseppe \textsc{Caire} and Prof. Gerhard \textsc{Wunder}\\	
+& \textbf{Graduation Date: 01.01.2021 (expected)}\vspace{3mm}\\
+	
+\textsc{Spring} 2015 & M.Sc. in \textsc{ Communication Systems}\\
+\textsc{Fall 2013} & \textbf{EE School, Sharif University of Technology}, Tehran, Iran\\
+& \textbf{Thesis:} ``Statistical Interpolation of Non-Gaussian AR Processes" \\
+&  Advisor: Prof. Arash \textsc{Amini}\\
+&\normalsize \textsc{Gpa}: 17.64/20\vspace{3mm}\\
+
+
+
+\textsc{Spring} 2013& B.Sc. in \textsc{Electrical Engineering} \\
+\textsc{Fall} 2009 & \textbf{ECE School, University of Tehran}, Tehran, Iran\\ 
+%& \textbf{Thesis:} ``Analysis, Design and Implementation of a Phased Array Antenna\\
+%& \hspace{12.5 mm} System Concerning Low Earth Orbit (LEO) satellite communications''\\
+%& Advisor:  Prof. Ali-Azam \textsc{Abbasfar}\\
+&\normalsize \textsc{Gpa}: 17.14/20\\
+
+
+%\textsc{Spring} 2009& Pre-University Cerificate in \textsc{Mathematics \& Physics}\\
+%\textsc{Fall} 2008& Shahid Panaahi Pre-University Center, Alborz, Iran\\
+%&\textsc{Gpa}: 19.68/20 \\\\
+%
+%\textsc{Spring} 2008& High School Diploma in \textsc{Mathematics \& Physics}\\
+%\textsc{Fall} 2005& Shahid Rajaee High School, Alborz, Iran\\
+%&\textsc{Gpa}: 19.28/20 \\\\
+
+\end{tabular}
+
+
+%Section: Honors
+\section{Honors}
+\begin{tabular}{rl}	
+ \textsc{2013}  & Nationwide University Entrance Exam in Electrical Engineering for Graduate Studies, Iran.\\
+& Rank: \textbf{31} (among about \textbf{10,000} participants)\\\\
+
+\textsc{2009}& Nationwide University Entrance Exam in Mathematics \& Physics, Iran. \\
+& Rank: \textbf{279} (among about \textbf{308,000} participants)\\\\
+
+\textsc{2009}& Nationwide University Entrance Exam in Foreign Languages, Iran.\\
+& Rank: \textbf{4} (among about \textbf{126,000} participants)\\\\
+
+\end{tabular}
+
+
+
+%Section: TA
+\section{Teaching Assistance}
+\begin{tabular}{ll}	
+ \textsc{Spring 2014}  & \textbf{Signals \& Systems}\\
+\textsc{Fall 2013}& \textbf{Signals \& Systems} \\
+\vspace{1mm}
+\textsc{Spring 2011}& \textbf{Mathematics II}\\
+\end{tabular}
+
+
+%Section: Publications
+\newpage
+\section{Research Papers}
+\begin{enumerate}
+	\subsection*{Published}
+	% first author
+	
+	\item \textbf{Barzegar Khalilsarai, Mahdi}, Saeid Haghighatshoar, and Giuseppe Caire. ``Joint Approximate Covariance Diagonalization with Applications in MIMO Virtual Beam Design." proceedings of the IEEE Global Communications Conference (Globecom), 2020.
+	
+	\item \textbf{Barzegar Khalilsarai, Mahdi}, Benedikt Gross, Stelios Stefanatos, Gerhard Wunder, Giuseppe Caire. ``WiFi-Based Channel Impulse Response Estimation and Localization via Multi-Band Splicing." proceedings of the IEEE Global Communications Conference (Globecom), 2020.
+	
+	\item \textbf{Barzegar Khalilsarai, Mahdi}, Tianyu Yang, Saeid Haghighatshoar, and Giuseppe Caire. ``Structured Channel Covariance Estimation for Dual-Polarized Massive MIMO Arrays." In WSA 2020; 24th International ITG Workshop on Smart Antennas, pp. 1-6. VDE, 2020.
+	
+	\item \textbf{Barzegar Khalilsarai, Mahdi}, Tianyu Yang, Saeid Haghighatshoar, Xinping Yi, and Giuseppe Caire. ``Active Channel Sparsification and Precoding for Dual-Polarized FDD Massive MIMO." In WSA 2020; 24th International ITG Workshop on Smart Antennas, pp. 1-6. VDE, 2020.
+	
+	\item \textbf{Barzegar Khalilsarai, Mahdi}, Tianyu Yang, Saeid Haghighatshoar, and Giuseppe Caire. ``Structured channel covariance estimation from limited samples in massive MIMO." In ICC 2020-2020 IEEE International Conference on Communications (ICC), pp. 1-7. IEEE, 2020.
+	
+	\item \textbf{Barzegar Khalilsarai, Mahdi}, Stelios Stefanatos, Gerhard Wunder, and Giuseppe Caire. ``WiFi-based indoor localization via multi-band splicing and phase retrieval." In 2019 IEEE 20th International Workshop on Signal Processing Advances in Wireless Communications (SPAWC), pp. 1-5. IEEE, 2019.
+	
+	\item \textbf{Barzegar Khalilsarai, Mahdi}, Yi Song, Tianyu Yang, Saeid Haghighatshoar, and Giuseppe Caire. ``Uplink-Downlink Channel Covariance Transformations and Precoding Design for FDD Massive MIMO." In 2019 53rd Asilomar Conference on Signals, Systems, and Computers, pp. 199-206. IEEE, 2019.
+	w	 	 	
+	\item \textbf{Barzegar Khalilsarai, Mahdi}, Saeid Haghighatshoar, Xinping Yi, and Giuseppe Caire. ``FDD massive MIMO via UL/DL channel covariance extrapolation and active channel sparsification." IEEE Transactions on Wireless Communications 18, no. 1 (2018): 121-135.
+	
+	\item \textbf{Barzegar Khalilsarai, Mahdi}, Saeid Haghighatshoar, and Giuseppe Caire. ``How to achieve massive MIMO gains in FDD systems?." In 2018 IEEE 19th International Workshop on Signal Processing Advances in Wireless Communications (SPAWC), pp. 1-5. IEEE, 2018.
+	
+	\item \textbf{Barzegar Khalilsarai, Mahdi}, Saeid Haghighatshoar, Xinping Yi, and Giuseppe Caire. ``FDD massive MIMO: Efficient downlink probing and uplink feedback via active channel sparsification." In 2018 IEEE International Conference on Communications (ICC), pp. 1-6. IEEE, 2018.
+	
+	\item \textbf{Barzegar Khalilsarai, Mahdi}, Saeid Haghighatshoar, Giuseppe Caire, and Gerhard Wunder. ``Compressive estimation of a stochastic process with unknown autocorrelation function." In 2017 IEEE International Symposium on Information Theory (ISIT), pp. 1282-1286. IEEE, 2017.
+	
+	% Collaborator
+	\item Song, Yi, \textbf{Mahdi Barzegar Khalilsarai}, Saeid Haghighatshoar, and Giuseppe Caire. ``Machine Learning for Geometrically-Consistent Angular Spread Function Estimation in Massive MIMO." arXiv preprint arXiv:1910.13795 (2019).
+	
+	\item Haghighatshoar, Saeid, \textbf{Mahdi Barzegar Khalilsarai}, and Giuseppe Caire. ``Multi-band covariance interpolation with applications in massive MIMO." In 2018 IEEE International Symposium on Information Theory (ISIT), pp. 386-390. IEEE, 2018.
+	
+	\item Wunder, Gerhard, Ingo Roth, \textbf{Mahdi Barzegar Khalilsarai}, Axel Flinth, Saeid Haghighatshoar, Giuseppe Caire, and Gitta Kutyniok. "Hierarchical sparse channel estimation for massive MIMO." In WSA 2018; 22nd International ITG Workshop on Smart Antennas, pp. 1-8. VDE, 2018.
+	
+	\item Stefanatos, Stelios, \textbf{Mahdi Barzegar Khalilsarai}, and Gerhard Wunder. ``Wideband massive MIMO channel estimation via sequential atomic norm minimization." In 2018 IEEE Global Conference on Signal and Information Processing (GlobalSIP), pp. 998-1002. IEEE, 2018.
+	
+	\item Tian, Chang, An Liu, \textbf{Mahdi Barzegar Khalilsarai}, Giuseppe Caire, Wu Luo, and Min-Jian Zhao. ``Randomized Channel Sparsifying Hybrid Precoding for FDD Massive MIMO Systems." IEEE Transactions on Wireless Communications (2020).
+	%	 	 \end{enumerate}
+	\noindent\subsection*{Under Review and ArXiv Preprints}
+	%	 \subsection*{Under Review and ArXiv Preprints}
+	%	 \begin{enumerate}
+	\item  \textbf{Barzegar Khalilsarai, Mahdi}, Tianyu Yang, Saeid Haghighatshoar, Xinping Yi, and Giuseppe Caire. ``Dual-Polarized FDD Massive MIMO: A Comprehensive Framework." under review at the IEEE Transactions on Wireless Communications (TWC), arXiv preprint arXiv:\\2008.11182 (2020).
+	
+	\item \textbf{Barzegar Khalilsarai, Mahdi}, Guiseppe Caire, Axel Flinth, Saeid Haghighatshoar, Gitta Kutyniok, and Gerhard Wunder. (alphabetic order) ``Estimation of Angles of Arrival Through Superresolution--A Soft Recovery Approach for General Antenna Geometries." arXiv preprint arXiv:1711.03996 (2017).
+	
+%	\item  Yi Song, \textbf{Mahdi Barzegar Khalilsarai}, Saeid Haghighatshoar, and Giuseppe Caire. ``Angular Power Spectrum Estimation in Massive MIMO using Deep Neural Networks." under review at the IEEE Transactions on Wireless Communications (TWC), 2020.
+%	
+%	\item  Tianyu Yang, \textbf{Mahdi Barzegar Khalilsarai}, Saeid Haghighatshoar, Xinping Yi, and Giuseppe Caire. ``Structured Channel Covariance Estimation from Limited Samples in Massive MIMO." under review at the IEEE Transactions on Wireless Communications (TWC), 2020.
+\end{enumerate}
+%Section: Graduate Courses
+\section{Selected Courses}
+\begin{tabular}{ll}	
+\vspace{2 mm}
+ \textsc{Stochastic Processes}  & \textsc{Time-Frequency Analysis} \\
+\vspace{2 mm}
+ \textsc{Information Theory}  &\textsc{Data Compression} \\
+\vspace{2 mm}
+ \textsc{Advanced Digital Communications}  & \textsc{Compressive Sensing} \\
+\vspace{2 mm}
+\textsc{Machine Learning} & \textsc{Functional Analysis}  \\
+
+\end{tabular}
+
+\section{Academic Service}
+\textbf{Journal and Conference Review}\\
+IEEE Trans. on Communications\\
+  IEEE Communications Letters\\
+  IEEE Signal Processing Letters \\
+  IEEE International Symposium on Information theory (ISIT)\\
+  IEEE Global Communications Conference (Globecom)\\
+  IEEE Wireless Communications and Networking Conference (WCNC)\\
+  IEEE International Conference on Communications (ICC)\\
+
+
+
+%Section: R & L
+%\section{Research \& Lab Experience}
+%\begin{tabular}{rl}	
+%\textsc{Spring 2013}& \textbf{Wireless Multimedia Communications Course Lab}\\
+%& \textbf{Final Project:} Image Compression Using Transform Coding \\
+%\vspace{3 mm}
+%& \footnotesize{(Software Design Using MATLAB and Hardware Implementation by TMS320C6713 DSP Starter Kit)}\\
+%\textsc{Spring 2013}& \textbf{Digital Signal Processing Course Lab   } \\
+%& \textbf{Final Project:} Speech Watermarking using Adaptive Vector Quantization  \\
+%& \hspace{21.5 mm} Index Modulation \\
+%\vspace{3 mm}
+%& \footnotesize{(Software Design Using MATLAB and Hardware Implementation by TMS320C6713 DSP Starter Kit)}\\
+% \textsc{Spring 2012}  & \textbf{Digital Signal Processing Course}\\
+%& \textbf{Final Project:} Speech Analysis and Synthesis Using Harmonic Models \\
+%& \footnotesize{(Software Design by MATLAB)}\\
+%
+%\end{tabular}
+
+%Section: E P 
+%\section{Extra Projects}
+%\begin{tabular}{rl}	
+%\textsc{Summer 2014}& \textbf{Acoustic Vehicle Detection}\\ 
+%& Capturing Environmental Sounds and Detecting the Presence of any\\
+%\vspace{3 mm}
+%& Kind of Motor Vehicles Using a PCA-Based Approach \\
+%\textsc{Fall 2013}& \textbf{Face Image Segmentation } \\
+%& Detecting Facial Components in an Image Using Viola-Jones Algorithm \\
+%\end{tabular}
+
+
+%Section: Tech Skills 
+\section{Technical Skills}
+\begin{tabular}{rl}	
+\vspace{2 mm}
+\textbf{Programming Languages} & MATLAB \& Simulink, Python, {\fb \LaTeX}  \\ 
+\end{tabular}
+
+
+%Section: Languages
+\section{Languages}
+\begin{tabular}{rl}
+\vspace{1 mm}
+ \textsc{Persian}&Mothertongue\\
+\textsc{English}&Fluent\\
+& \textbf{TOEFL (iBT):} 112/120 (Reading: 30/30, Listening: 27/30, Speaking: 27/30, Writing: 28/30)\\
+\vspace{1 mm}
+& \textbf{GRE:}  Verbal: 160/170, Quantitative: 164/170, Writing: 4/6 \\
+\textsc{German}&Intermediate (Level B1)\\
+\end{tabular}
+
+\section{References}
+\begin{enumerate}
+	\item Giuseppe Caire, Professor, Institute for Telecommunication Systems, Technical University of Berlin, Berlin, Germany.\\
+	\textit{email:} {\sf caire[AT]tu-berlin.de}, \hspace{26mm} \textit{Tel:} +49(0)30 314-29668.
+	\item Gerhard Wunder, Professor, Department of Mathematics and Computer Science, Free University of Berlin, Berlin, Germany.\\
+	\textit{email:} {\sf g.wunder[AT]fu-berlin.de}, \hspace{20mm} \textit{Tel:} +49(0)30 838-61931.	
+	\item Dr. Saeid Haghighatshoar, Institute for Telecommunication Systems, Technical University of Berlin, Berlin, Germany.\\
+	\textit{email:} {\sf saeid.haghighatshoar[AT]tu-berlin.de}, \hspace{3mm} \textit{Tel:} +49(0)30 314-28461.	
+	\item  Dr. Xinping Yi, Department of Electrical Engineering and Electronics, University of Liverpool, Liverpool, United Kingdom.\\
+	\textit{email:} {\sf xinping.yi [AT]liv.ac.uk}, \hspace{22mm} \textit{Tel:} +44 (0)151 795 9753.	
+	\item Arash Amini, Professor, Department of Engineering, Sharif University of Technology, Tehran, Iran.\\
+	\textit{email:} {\sf aamini[AT]sharif.ir}, \hspace{29mm} \textit{Tel:} +98(0)21 6616-4382.	
+\end{enumerate}
+%\section{Interests \& Hobbies}
+%%\begin{tabular}{rl}
+%%\end{tabular}
+%
+%\begin{itemize}[leftmargin=*]
+%\item  Reading Books (esp. on Topics Concerning Philosophy)
+%\item Playing Chess (Received a Silver Medal on Helaal-Ahmar Nationwide Team Competitions)
+%\item Listening Music
+%\end{itemize}
+
+%\section{References}
+%\begin{itemize}
+%\item \textbf{Dr.Arash Amini} \\
+%Dept. of Electrical Engineering, Sharif University of Technology, Tehran, Iran\\
+%\textsc{email:} \href{aamini@ee.sharif.edu}{aamini@ee.sharif.edu}
+%
+%\item \textbf{Prof. Farrokh Marvasti} \\
+%Dept. of Electrical Engineering, Sharif University of Technology, Tehran, Iran\\
+%\textsc{email:} \href{marvasti@ee.sharif.edu}{marvasti@ee.sharif.edu}
+%
+%\item \textbf{Prof. Amir Masoud Rabiei} \\
+%Dept. of Electrical \& Computer Engineering, University of Tehran, Tehran, Iran\\
+%\textsc{email:} \href{rabiei@ut.ac.ir}{rabiei@ut.ac.ir}
+%\end{itemize}
+
+\end{document}
