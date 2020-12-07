@@ -20,5 +20,8 @@ I am broadly interested in various aspects of data processing and analysis in wi
 * Machine/Deep Learning
 * Compressed Sensing and sparse recovery techniques
 
+News
+------
+- I present two papers on [MIMO virtual beam design](https://ieee-globecom-virtual.org/presentation/paper/joint-approximate-covariance-diagonalization-applications-mimo-virtual-beam) and [WiFi-based localization](https://ieee-globecom-virtual.org/presentation/paper/wifibased-channel-impulse-response-estimation-and-localization-multiband) at the 2020 IEEE GLOBECOM. A third collaborative work on [Deep Learning-based massive MIMO angular spread function estimation](https://ieee-globecom-virtual.org/presentation/paper/deep-learning-geometricallyconsistent-angular-spread-function-estimation-massive) will be presented by my colleague Yi Song.
 
 
