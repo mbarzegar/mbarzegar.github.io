@@ -1,0 +1,94 @@
+baseURL: "https://mbarzegar.github.io/" 
+title: Mahdi Barzegar
+paginate: 20
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+
+taxonomies:
+    tag: tags
+
+menu:
+    main:
+        - name: Bio
+          url: /bio/
+          weight: 1
+        - name: Papers
+          url: /papers/
+          weight: 2
+        - name: Blog
+          url: /blog/
+          weight: 3   
+
+params:
+    description: "wireless research engineer"
+    author: Mahdi Barzegar
+    googleAnalyticsID: ""
+    DateFormat: "January 2006"
+    defaultTheme: auto
+    hideFooter: true
+    disableThemeToggle: true
+    ShowShareButtons: false
+    ShowReadingTime: false
+    disableSpecial1stPost: true
+    disableAnchoredHeadings: true
+    ShowPostNavLinks: false
+    ShowBreadCrumbs: false
+    ShowCodeCopyButtons: true
+    ShowRssButtonInSectionTermList: false
+    ShowToc: false
+    disableScrollToTop: true
+    TocOpen: true
+    ShowWordCount: false
+    UseHugoToc: true
+    comments: false
+    math: true
+    profileMode:
+          enabled: true
+          title: Mahdi Barzegar
+          subtitle: "I am a staff wirless engineer at Lenovo. 
+		     I focus on research for future 6G wireless networks and the on-going standardization of 5G.
+		     My research interests and expertise include information theory, MIMO systems and
+		     applications of machine learning in wireless physical layer."
+          imageUrl: "/my_photo_colored.jpg"
+          imageWidth: 300
+          imageHeight: 300
+          imageTitle: Mahdi Barzegar
+          buttons:
+            - name: Bio
+              url: /bio/
+            - name: Papers
+              url: /papers/
+            - name: Blog
+              url: /blog/
+    socialIcons:
+        - name: CV
+          url: /cv.pdf
+        - name: Email
+          url: mailto:mkhalilsarai@lenovo.com
+        - name: Google Scholar
+          url: https://scholar.google.com/citations?user=tI6tnF8AAAAJ&hl=en&oi=ao
+
+    assets:
+        disableHLJS: true
+        disableScrollBarStyle: true
+    cover:
+        hiddenInList: true
+        hiddenInSingle: true
+    label:
+      text: "Mahdi Barzegar"
+      icon: /favicon.ico
+      iconHeight: 18
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        guessSyntax: true
+        style: autumn 
+    tableOfContents:
+        endLevel: 2
+        ordered: false
+        startLevel: 2
