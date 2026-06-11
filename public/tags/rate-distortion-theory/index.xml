@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Rate-Distortion Theory on Mahdi Barzegar</title>
+    <link>https://mbarzegar.github.io/tags/rate-distortion-theory/</link>
+    <description>Recent content in Rate-Distortion Theory on Mahdi Barzegar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 09 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mbarzegar.github.io/tags/rate-distortion-theory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FDD Massive MIMO Channel Training: Optimal Rate-Distortion Bounds and the Spectral Efficiency of ``One-Shot” Schemes</title>
+      <link>https://mbarzegar.github.io/2/</link>
+      <pubDate>Sat, 09 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbarzegar.github.io/2/</guid>
+      <description>We study the rate-distortion bound in training spatially correlated MIMO channels in a FDD system via Downlink pilot transmission and Uplink feedback. IEEE Transactions on Wireless Communications, Sep. 2023.</description>
+    </item>
+    
+  </channel>
+</rss>

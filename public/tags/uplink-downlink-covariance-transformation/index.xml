@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>uplink-downlink covariance transformation on Mahdi Barzegar</title>
+    <link>https://mbarzegar.github.io/tags/uplink-downlink-covariance-transformation/</link>
+    <description>Recent content in uplink-downlink covariance transformation on Mahdi Barzegar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://mbarzegar.github.io/tags/uplink-downlink-covariance-transformation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dual-Polarized FDD Massive MIMO: A Comprehensive Framework</title>
+      <link>https://mbarzegar.github.io/3/</link>
+      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbarzegar.github.io/3/</guid>
+      <description>We propose a comprehensive scheme for realizing a massive multiple-input multiple-output (MIMO) system with dual-polarized antennas in frequency division duplexing (FDD) mode. IEEE Transactions on Wireless Communications, Feb. 2022.</description>
+    </item>
+    
+  </channel>
+</rss>

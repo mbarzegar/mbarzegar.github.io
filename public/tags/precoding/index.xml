@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Precoding on Mahdi Barzegar</title>
+    <link>https://mbarzegar.github.io/tags/precoding/</link>
+    <description>Recent content in Precoding on Mahdi Barzegar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 01 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mbarzegar.github.io/tags/precoding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deep-Learning Aided Channel Training and Precoding in FDD Massive MIMO with Channel Statistics Knowledge</title>
+      <link>https://mbarzegar.github.io/15/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbarzegar.github.io/15/</guid>
+      <description>We propose a method for channel training and precoding in FDD massive MIMO based on deep neural networks, exploiting Downlink channel covariance knowledge.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>FDD Massive MIMO on Mahdi Barzegar</title>
+    <link>https://mbarzegar.github.io/tags/fdd-massive-mimo/</link>
+    <description>Recent content in FDD Massive MIMO on Mahdi Barzegar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 01 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mbarzegar.github.io/tags/fdd-massive-mimo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deep-Learning Aided Channel Training and Precoding in FDD Massive MIMO with Channel Statistics Knowledge</title>
+      <link>https://mbarzegar.github.io/15/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbarzegar.github.io/15/</guid>
+      <description>We propose a method for channel training and precoding in FDD massive MIMO based on deep neural networks, exploiting Downlink channel covariance knowledge.</description>
+    </item>
+    
+    <item>
+      <title>FDD massive MIMO via UL/DL channel covariance extrapolation and active channel sparsification</title>
+      <link>https://mbarzegar.github.io/5/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbarzegar.github.io/5/</guid>
+      <description>We propose active channel sparsification, a method of training multi-user MIMO Downlink channels in FDD mode with any given pilot length, while maximizing the effective channel matrix rank. IEEE Transactions on Wireless Communications, 2019.</description>
+    </item>
+    
+  </channel>
+</rss>

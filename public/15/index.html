@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Deep-Learning Aided Channel Training and Precoding in FDD Massive MIMO with Channel Statistics Knowledge | Mahdi Barzegar</title>
+<meta name="keywords" content="Deep Learning, FDD Massive MIMO, Channel Training, Precoding, Analog Feedback">
+<meta name="description" content="We propose a method for channel training and precoding in FDD massive MIMO based on deep neural networks, exploiting Downlink channel covariance knowledge.">
+<meta name="author" content="Mahdi Barzegar">
+<link rel="canonical" href="https://mbarzegar.github.io/15/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fdcbd5c768166650ba475ec47c073aafc71eacd3fdff8699666e740a1049eb42.css" integrity="sha256-/cvVx2gWZlC6R17EfAc6r8cerNP9/4aZZm50ChBJ60I=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://mbarzegar.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://mbarzegar.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://mbarzegar.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://mbarzegar.github.io/apple-touch-icon.png">
+
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Deep-Learning Aided Channel Training and Precoding in FDD Massive MIMO with Channel Statistics Knowledge" />
+<meta property="og:description" content="We propose a method for channel training and precoding in FDD massive MIMO based on deep neural networks, exploiting Downlink channel covariance knowledge." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mbarzegar.github.io/15/" /><meta property="article:section" content="papers" />
+<meta property="article:published_time" content="2023-03-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-03-01T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Deep-Learning Aided Channel Training and Precoding in FDD Massive MIMO with Channel Statistics Knowledge"/>
+<meta name="twitter:description" content="We propose a method for channel training and precoding in FDD massive MIMO based on deep neural networks, exploiting Downlink channel covariance knowledge."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Papers",
+      "item": "https://mbarzegar.github.io/papers/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Deep-Learning Aided Channel Training and Precoding in FDD Massive MIMO with Channel Statistics Knowledge",
+      "item": "https://mbarzegar.github.io/15/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Deep-Learning Aided Channel Training and Precoding in FDD Massive MIMO with Channel Statistics Knowledge",
+  "name": "Deep-Learning Aided Channel Training and Precoding in FDD Massive MIMO with Channel Statistics Knowledge",
+  "description": "We propose a method for channel training and precoding in FDD massive MIMO based on deep neural networks, exploiting Downlink channel covariance knowledge.",
+  "keywords": [
+    "Deep Learning", "FDD Massive MIMO", "Channel Training", "Precoding", "Analog Feedback"
+  ],
+  "articleBody": " Download Paper on arXiv\rCode\rAbstract We propose a method for channel training and precoding in FDD massive MIMO based on deep neural networks (DNNs), exploiting Downlink (DL) channel covariance knowledge. The DNN is optimized to maximize the DL multi-user sum-rate, by producing a pre-beamforming matrix based on user channel covariances that maps the original channel vectors to “effective channels”. Measurements of these effective channels are received at the users via common pilot transmission and sent back to the base station (BS) through analog feedback without further processing. The BS estimates the effective channels from received feedback and constructs a linear precoder by concatenating the optimized pre-beamforming matrix with a zero-forcing precoder over the effective channels. We show that the proposed method yields significantly higher sum-rates than the state-of-the-art DNN-based channel training and precoding scheme, especially in scenarios with small pilot and feedback size relative to the channel coherence block length. Unlike many works in the literature, our proposition does not involve deployment of a DNN at the user side, which typically comes at a high computational cost and parameter-transmission overhead on the system, and is therefore considerably more practical.\nFig. 1: System schematic for DNN aided FDD multi-user training and precoding with channel statistics knowledge. The proposed system takes Downlink channels covariance matrices as input and train with Downlink channels to output the optimized precoder. Citation Song, Yi, Tianyu Yang, Mahdi Barzegar Khalilsarai, and Giuseppe Caire. “Deep-Learning Aided Channel Training and Precoding in FDD Massive MIMO with Channel Statistics Knowledge.” arXiv preprint arXiv:2303.11096 (2023).\n@article{song2023deep, title={Deep-Learning Aided Channel Training and Precoding in FDD Massive MIMO with Channel Statistics Knowledge}, author={Song, Yi and Yang, Tianyu and Khalilsarai, Mahdi Barzegar and Caire, Giuseppe}, journal={arXiv preprint arXiv:2303.11096}, year={2023} } ",
+  "wordCount" : "287",
+  "inLanguage": "en",
+  "datePublished": "2023-03-01T00:00:00Z",
+  "dateModified": "2023-03-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Mahdi Barzegar"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://mbarzegar.github.io/15/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Mahdi Barzegar",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://mbarzegar.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://mbarzegar.github.io/" accesskey="h" title="Mahdi Barzegar">
+             
+                <img src="https://mbarzegar.github.io/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Mahdi Barzegar</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://mbarzegar.github.io/bio/" title="Bio">
+                    <span>Bio</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mbarzegar.github.io/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mbarzegar.github.io/blog/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Deep-Learning Aided Channel Training and Precoding in FDD Massive MIMO with Channel Statistics Knowledge
+    </h1>
+
+    
+    <div class="post-meta"><span title='2023-03-01 00:00:00 +0000 UTC'>March 2023</span>&nbsp;&middot;&nbsp;Mahdi Barzegar
+
+</div>
+  </header> 
+  <div class="post-content"><hr>
+<h5 id="download">Download</h5>
+<ul>
+<li><a href="https://arxiv.org/pdf/2303.11096.pdf" target="_blank">Paper on arXiv</a>
+</li>
+<li><a href="https://github.com/YiSongTUBerlin/DL-Aided-Channel-Training-and-Precoding-in-FDD-Massive-MIMO-with-Channel-Statistics-Knowledge" target="_blank">Code</a>
+</li>
+</ul>
+<hr>
+<h5 id="abstract">Abstract</h5>
+<p>We propose a method for channel training and
+precoding in FDD massive MIMO based on deep neural networks
+(DNNs), exploiting Downlink (DL) channel covariance knowledge. The DNN is optimized to maximize the DL multi-user
+sum-rate, by producing a pre-beamforming matrix based on user
+channel covariances that maps the original channel vectors to
+“effective channels”. Measurements of these effective channels are
+received at the users via common pilot transmission and sent back
+to the base station (BS) through analog feedback without further
+processing. The BS estimates the effective channels from received
+feedback and constructs a linear precoder by concatenating the
+optimized pre-beamforming matrix with a zero-forcing precoder
+over the effective channels. We show that the proposed method
+yields significantly higher sum-rates than the state-of-the-art
+DNN-based channel training and precoding scheme, especially
+in scenarios with small pilot and feedback size relative to the
+channel coherence block length. Unlike many works in the
+literature, our proposition does not involve deployment of a DNN
+at the user side, which typically comes at a high computational
+cost and parameter-transmission overhead on the system, and is
+therefore considerably more practical.</p>
+<hr>
+<h5 id="fig-1-system-schematic-for-dnn-aided-fdd-multi-user-training-and-precoding-with-channel-statistics-knowledge-the-proposed-system-takes-downlink-channels-covariance-matrices-as-input-and-train-with-downlink-channels-to-output-the-optimized-precoder">Fig. 1: System schematic for DNN aided FDD multi-user training and precoding with channel statistics knowledge. The proposed system takes Downlink channels covariance matrices as input and train with Downlink channels to output the optimized precoder.</h5>
+<p><img loading="lazy" src="/DNN_from_paper.PNG" alt=""  />
+</p>
+<hr>
+<h5 id="citation">Citation</h5>
+<p>Song, Yi, Tianyu Yang, Mahdi Barzegar Khalilsarai, and Giuseppe Caire. &ldquo;Deep-Learning Aided Channel Training and Precoding in FDD Massive MIMO with Channel Statistics Knowledge.&rdquo; arXiv preprint arXiv:2303.11096 (2023).</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-BibTeX" data-lang="BibTeX"><span style="display:flex;"><span><span style="color:#0a0;text-decoration:underline">@article</span>{song2023deep,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">title</span>=<span style="color:#a50">{Deep-Learning Aided Channel Training and Precoding in FDD Massive MIMO with Channel Statistics Knowledge}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">author</span>=<span style="color:#a50">{Song, Yi and Yang, Tianyu and Khalilsarai, Mahdi Barzegar and Caire, Giuseppe}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">journal</span>=<span style="color:#a50">{arXiv preprint arXiv:2303.11096}</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#1e90ff">year</span>=<span style="color:#a50">{2023}</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://mbarzegar.github.io/tags/deep-learning/">Deep Learning</a></li>
+      <li><a href="https://mbarzegar.github.io/tags/fdd-massive-mimo/">FDD Massive MIMO</a></li>
+      <li><a href="https://mbarzegar.github.io/tags/channel-training/">Channel Training</a></li>
+      <li><a href="https://mbarzegar.github.io/tags/precoding/">Precoding</a></li>
+      <li><a href="https://mbarzegar.github.io/tags/analog-feedback/">Analog Feedback</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>
